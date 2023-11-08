@@ -8,12 +8,11 @@
 "Клинике необходим микросервис для хранения и обновления информации для собак!"
 Директор пообщался с IT-отделом, и они сверстали документацию в формате OpenAPI.
 Чтобы открыть ее, нам:
-1. Необходимо [скачать файл](https://drive.google.com/file/d/1qtHEGCl2gpLxOR7CJPOC40tHp4hwYL5_/view) с её описанием в YAML формате
-2. Открыть [Swagger Editor](https://editor-next.swagger.io/)
+1. Необходимо скачать файл (https://drive.google.com/file/d/1qtHEGCl2gpLxOR7CJPOC40tHp4hwYL5_/view) с её описанием в YAML формате
+2. Открыть https://editor-next.swagger.io/
 3. Загрузить содержимое файла в левую часть экрана
 
 Наша цель - реализовать описанный микросервис!
-ВАЖНО: Используем заготовку [main.py](https://drive.google.com/file/d/14wEjgs97V9im6zHZo3JIwU8rTsus0cI4/view) для работы над заданием
 ```
 
 ## Деплой
