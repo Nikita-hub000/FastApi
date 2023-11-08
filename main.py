@@ -1,6 +1,7 @@
 from enum import Enum
 from fastapi import FastAPI
 from pydantic import BaseModel
+from typing import List
 
 app = FastAPI()
 
@@ -56,12 +57,12 @@ def patchDog(item: Dog, pk: int):
     dogs_db[pk] = item
     return item
 
-@app.get('/dog', response_model=list[Dog])
+@app.get('/dog', response_model=List[Dog])
 def getDogs(kind: str):
     result = [{'name': i.name, 'pk': i.pk, 'kind': i.kind.value} for i in dogs_db.values() if i.kind.value==kind]
     return result
 
-@app.get('/dog/{pk}', response_model=list[Dog])
+@app.get('/dog/{pk}', response_model=List[Dog])
 def getDogs(pk: int):
     result = [{'name': i.name, 'pk': i.pk, 'kind': i.kind.value} for i in dogs_db.values() if i.pk==pk]
     return result
