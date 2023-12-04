@@ -16,3 +16,4 @@
 ```
 
 ## Деплой
+Сервер доступен [здесь](https://myfastapi-5ur3.onrender.com)
